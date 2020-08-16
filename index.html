@@ -10,8 +10,8 @@
   <meta name="description" content="">
   <meta name="keywords" content="Democratize the technologies of 3D digitization from photographs.">
   <!-- CSS dependencies -->
-  <link rel="stylesheet" href="aquamarine.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="alicevision.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" type="text/css">
   <!-- Script: Make my navbar transparent when the document is scrolled to top -->
   <script src="js/navbar-ontop.js"></script>
   <!-- Script: Animated entrance -->
@@ -22,7 +22,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
     <div class="container">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation" style=""> <span class="navbar-toggler-icon"></span> </button>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation" > <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbar2SupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item mx-2">
@@ -41,9 +41,6 @@
             <a class="nav-link" href="#members">Members</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#statutes">Statutes</a>
-          </li>
-          <li class="nav-item mx-2">
             <a class="nav-link" href="#history">History</a>
           </li>
           <li class="nav-item mx-2">
@@ -60,15 +57,14 @@
     </div>
   </nav>
   <!-- Cover -->
-  <div class="d-flex align-items-center section-aquamarine py-5 cover" style="background-image: url(&quot;assets/graph_meshroom_BG_dark.png&quot;);">
+  <div id="landing" class="d-flex align-items-center section-aquamarine py-5 cover" style="background-image: url(&quot;assets/graph_meshroom_BG_dark.png&quot;);">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-white mt-5">
-          <h1 class="display-2 d-none d-md-block">AliceVision Association</h1>
-          <img src="assets/logos/AliceVision_Association_logo_round_white_circle.png" class="center-block img-fluid my-3 rounded-circle" width="200">
-        </div>
-        <div class="col-lg-11 text-white mt-5">
-          <h2 class="display-8 d-none d-md-block">The ALICEVISION association is a non-profit organization whose ambition is to democratize 3D digitization technologies from photographs.</h2>
+        <div class="col-lg-12 text-white mt-5 logo-container">
+            <img src="assets/logos/AliceVision_circle.png" class="center-block img-fluid my-3 rounded-circle" width="200">
+          <h1 class="display-2 d-md-block">AliceVision Association</h1>
+
+          <h2 class="display-8 d-md-block">The ALICEVISION association is a non-profit organization whose ambition is to democratize 3D digitization technologies from photographs.</h2>
           <a href="#donate" class="btn btn-lg mt-4 btn-outline-light">
             <i class="fa fa-heart m-12">&nbsp;&nbsp;</i>Make a Donation </a>
           <i class="d-block fa fa-angle-down pt-5 fa-3x"></i>
@@ -77,8 +73,8 @@
             <a href="https://groups.google.com/forum/#!forum/alicevision" target="blank" title="Mailing List"><i class="fa fa-3x fa-comments m-2 text-white"></i></a>
             <!-- <a href="https://sketchfab.com/AliceVision" target="blank" title="Sketchfab"><i class="fa fa-3x fa-cube m-2 text-white"></i></a> -->
             <a href="https://sketchfab.com/AliceVision" target="blank" title="Sketchfab"><img src="assets/logos/sketchfab_bw.png" style="width:68px;height:68px;opacity:1;vertical-align:top"></a>
-            <a href="https://twitter.com/alicevision_org" target="blank" title="Twitter"><i class="fa fa-3x fa-twitter m-2 text-white"></i></a>
-            <a href="https://www.linkedin.com/groups/13573776" target="blank" title="Linkedin"><i class="fa fa-3x fa-linkedin m-2 text-white"></i></a>
+            <a href="https://twitter.com/alicevision_org" target="blank" title="Twitter"><i class="fab fa-3x fa-twitter m-2 text-white"></i></a>
+            <a href="https://www.linkedin.com/groups/13573776" target="blank" title="Linkedin"><i class="fab fa-3x fa-linkedin m-2 text-white"></i></a>
             <a href="https://www.youtube.com/channel/UCQAJFOz8yuMTn9dSHkdU-nw" target="blank" title="Youtube"><i class="fa fa-3x fa-youtube-play m-2 text-white"></i></a>
           </div>
         </div>
@@ -86,56 +82,136 @@
     </div>
   </div>
   <!-- Parallax section -->
-  <div class="py-5 section-parallax" style="background-image: url(&quot;assets/graph_meshroom_BG2flip.png&quot;);" id="mission">
-    <div class="container my-5 bg-light p-4">
-      <div class="row mx-auto">
+  <div class="py-5 section-parallax" style="background-image: url(assets/background_v2.png);" id="mission">
+    <div class="container my-5 p-4 mission">
+      <div class="row">
         <div class="col-md-12">
           <h1 class="mb-3">Mission</h1>
-          <p class="text-left" style=""> The association considers 3D digitization technologies essential for many applications for the common good, especially for culture and artistic creation.<br> The association's mission is to carry out the following scientific and educational actions: </p>
-          <ul class="text-left">
-            <li>promoting the development of free computer vision software, respectful of open standards, that can be used or modified freely by all; </li>
-            <li>promoting access to research knowledge and data; </li>
-            <li>promote open and reproducible research allowing for transparent testing and verification of results; </li>
-            <li>promoting these technologies to industry, research, education and the general public. </li>
-          </ul>
-          <p class="text-left" style=""> In particular, the association supports the development and promotion of open source software tools grouped in the <a href="http://alicevision.org" target="blank">AliceVision project</a>. </p>
+          <p class="text-left" > The association considers 3D digitization technologies essential for many applications for the common good, especially for culture and artistic creation.<br> The association's mission is to carry out the following scientific and educational actions: </p>
         </div>
+        <div class="row">
+          <div class="offset-1 col-1 d-flex align-items-center">
+              <span><i class="fab fa-2x fa-osi"></i></span>
+          </div>
+          <div class="col-10 text-left d-flex align-items-center">
+            <span>
+              Promoting the development of free computer vision software, respectful of open standards, that can be used or modified freely by all
+            </span>
+          </div>
+
+          <div class="offset-1 col-1 d-flex align-items-center">
+            <i class="fas fa-2x fa-undo"></i>
+          </div>
+          <div class="col-10 text-left d-flex align-items-center">
+            Promote open and reproducible research allowing for transparent testing and verification of results
+          </div>
+
+          <div class="offset-1 col-1 d-flex align-items-center">
+            <i class="fas fa-2x fa-dna"></i>
+          </div>
+          <div class="col-10 text-left d-flex align-items-center">
+            Promoting access to research knowledge and data
+          </div>
+
+          <div class="offset-1 col-1 d-flex align-items-center">
+            <i class="fa fa-2x fa-graduation-cap"></i>
+          </div>
+          <div class="col-10 text-left d-flex align-items-center">
+            Promoting these technologies to industry, research, education and the general public
+          </div>
+        </div>
+        <div class="col-md-12">
+          <p class="text-left"> In particular, the association supports the development and promotion of open source software tools grouped in the <a href="http://alicevision.org" target="blank">AliceVision project</a>. </p>
+        </div>
+        
+        <!--
+        <div class="row mx-auto">
+            <ul class="text-left">
+            <li><i class="fab fa-2x fa-osi"></i>Promoting the development of free computer vision software, respectful of open standards, that can be used or modified freely by all;</li>
+            <li><i class="fas fa-2x fa-dna"></i>Promoting access to research knowledge and data;</li>
+            <li><i class="fas fa-2x fa-undo"></i>Promote open and reproducible research allowing for transparent testing and verification of results;</li>
+            <li><i class="far fa-2x fa-heart"></i>Promoting these technologies to industry, research, education and the general public.</li>
+          </ul>
+          <p class="text-left"> In particular, the association supports the development and promotion of open source software tools grouped in the <a href="http://alicevision.org" target="blank">AliceVision project</a>. </p>
+        </div>
+        -->
       </div>
     </div>
   </div>
   <!-- Projects -->
-  <div class="py-5 section bg-faded bg-light" id="projects">
+  <div class="py-5 section" id="projects">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <h1 class="mb-4">Projects</h1>
-          <p class="text-left" style="">The ALICEVISION association is developing 2 main open source projects: AliceVision framework and Meshroom software.</p>
+          <p class="text-center" >The ALICEVISION association is developing 2 main open source projects: AliceVision framework and Meshroom software.</p>
         </div>
       </div>
       <div class="row">
-        <h3 class="mb-2">AliceVision Framework</h3>
-        <p class="text-left" style=""><a href="https://github.com/alicevision/AliceVision" target="blank">AliceVision framework</a> provides computer vision tools and software libraries to enable 3D reconstructions from photographs taken with all types of cameras, from professional cameras to smartphones. These photogrammetry tools are 100% free and accessible to all. The solution takes advantage of the GPU for some of the most expensive computational steps. The proposed solution is scalable in terms of the number of images - it is capable of processing datasets of more than 1,000 images. The framework relies on standard and open-source file formats (OpenEXR, Alembic, OBJ) to facilitate the interoperability of the software with other professional tools. Integrations are offered with content creation tools such as Blender®, Maya® (Autodesk), Nuke® / Mari® (Foundry) and Houdini® (SideFX).</p>
+        <div class="col-md-6">
+          <h3 class="mb-2">AliceVision Framework</h3>
+          <p class="text-justify">
+            <a href="https://github.com/alicevision/AliceVision" target="blank">AliceVision framework</a> provides computer vision tools and software libraries to enable 3D reconstructions from photographs taken with all types of cameras, from professional cameras to smartphones. These photogrammetry tools are 100% free and accessible to all. The solution takes advantage of the GPU for some of the most expensive computational steps. The proposed solution is scalable in terms of the number of images - it is capable of processing datasets of more than 1,000 images. The framework relies on standard and open-source file formats (OpenEXR, Alembic, OBJ) to facilitate the interoperability of the software with other professional tools. Integrations are offe#EE6767 with content creation tools such as Blender®, Maya® (Autodesk), Nuke® / Mari® (Foundry) and Houdini® (SideFX).
+          </p>
+        </div>
+        <div class="col-md-6">
+          <!--
+          <div class="sketchfab-embed-wrapper">
+            <iframe title="A 3D model" src="https://sketchfab.com/models/b8576a61715a4feabd9637215eeb2e05/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                <a href="https://sketchfab.com/3d-models/davia-rocks-b8576a61715a4feabd9637215eeb2e05?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Davia Rocks</a>
+                by <a href="https://sketchfab.com/AliceVision?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">AliceVision</a>
+                on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+            </p>
+          </div>
+          -->
+        </div>
       </div>
       <div class="row">
-        <h3 class="mb-2">Meshroom Software</h3>
-        <p class="text-left mb-4" style=""><a href="http://meshroom.alicevision.org" target="blank">Meshroom software</a> is a complete photogrammetry solution built around AliceVision. It provides a default workflow for standard use cases, a nodal editor with a caching mechanism for the files created at each step, a post-processing of the created mesh and a possible retexturing after retopology. Meshroom allows users to calculate their 3D reconstruction locally or on a render farm. The nodal interface allows users to adapt the reconstruction pipeline to their production needs, finding a compromise between calculation time and quality of the result. Meshroom has been used since 2010 in the creation of digital environments for the visual effects industry (feature films and commercials), as well as since a few years in other industries such as cosmetics, sports manufacturing, augmented reality surgery, real estate…</p>
-        <p class="text-left" style="">The ALICEVISION project also includes a library for <a href="https://github.com/alicevision/popsift" target="blank">SIFT detection on GPU</a> and an original <a href="https://github.com/alicevision/CCTag" target="blank">markers detector called CCTag</a> with CPU and GPU implementations. The association also contributes to the open source ecosystem it relies on, like <a href="https://github.com/OpenImageIO/oiio" target="blank">OpenImageIO</a>, <a href="https://github.com/microsoft/vcpkg" target="blank">Vcpkg</a>, etc. </p>
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
+          <h3 class="mb-2">Meshroom Software</h3>
+          <p class="text-justify mb-4" ><a href="http://meshroom.alicevision.org" target="blank">Meshroom software</a> is a complete photogrammetry solution built around AliceVision. It provides a default workflow for standard use cases, a nodal editor with a caching mechanism for the files created at each step, a post-processing of the created mesh and a possible retexturing after retopology. Meshroom allows users to calculate their 3D reconstruction locally or on a render farm. The nodal interface allows users to adapt the reconstruction pipeline to their production needs, finding a compromise between calculation time and quality of the result. Meshroom has been used since 2010 in the creation of digital environments for the visual effects industry (feature films and commercials), as well as since a few years in other industries such as cosmetics, sports manufacturing, augmented reality surgery, real estate…</p>
+        </div>
+        <p class="text-left" >
+          The ALICEVISION project also includes a library for <a href="https://github.com/alicevision/popsift" target="blank">SIFT detection on GPU</a> and an original <a href="https://github.com/alicevision/CCTag" target="blank">markers detector called CCTag</a> with CPU and GPU implementations. The association also contributes to the open source ecosystem it relies on, like <a href="https://github.com/OpenImageIO/oiio" target="blank">OpenImageIO</a>, <a href="https://github.com/microsoft/vcpkg" target="blank">Vcpkg</a>, etc.
+        </p>
       </div>
     </div>
   </div>
   <!-- Non-profit Org -->
-  <div class="py-5 section-parallax" style="background-image: url(&quot;assets/graph_meshroom_BG.png&quot;);" id="non-profit-org">
-    <div class="container my-5 bg-light p-4">
+  <div class="py-1" id="non-profit-org">
+    <div class="container my-3 p-4">
       <div class="row mx-auto">
         <div class="col-md-12">
           <h1 class="mb-3">A Non-Profit Organization</h1>
-          <p class="text-left" style="">The ALICEVISION association is governed by the French law of 1st July 1901. It is therefore a voluntary organization without any distribution of profits, neither for its leaders nor for its members. The ALICEVISION association, like any association, is a legal entity with its own legal capacity and responsibility, distinct from the persons managing it.<br>Voluntary work is the rule concerning the association : all donations and revenues are kept and used by the legal entity, without any distribution to the managers or members, despite their work and investment.</p>
+        </div>
+      </div>
+      <div class="row mx-auto py-3">
+        <div class="col-md-12">
+          <p class="" >The ALICEVISION association is governed by the French law of 1st July 1901. It is therefore a voluntary organization without any distribution of profits, neither for its leaders nor for its members. The ALICEVISION association, like any association, is a legal entity with its own legal capacity and responsibility, distinct from the persons managing it.<br>Voluntary work is the rule concerning the association : all donations and revenues are kept and used by the legal entity, without any distribution to the managers or members, despite their work and investment.</p>
+        </div>
+      </div>
+      <div class="row mx-auto py-3">
+        <div class="col-md-6">
+          <a href="assets/statutes/Statuts_ALICEVISION.pdf" target="blank">
+            <i style="color: white;" class="fas fa-3x fa-file-alt m-2"></i>
+            <p>Status officiels de l’association (French)</p>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="assets/statutes/Statutes_ALICEVISION(EN).pdf" target="blank">
+            <i style="color: white;" class="fas fa-3x fa-file-alt m-2"></i>
+            <p>Association Statutes translation (English) <br >
+            <i>This translation version is given for reference only.</i></p>
+          </a>
         </div>
       </div>
     </div>
   </div>
   <!-- Members -->
-  <div class="py-5 bg-light" id="members">
+  <div class="py-5" id="members">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -143,9 +219,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
-          <p class="text-left" style="">The ALICEVISION association has been founded by 14 people from European research and industry, who have been collaborating since 2010 around 3D computer vision for cultural and creative industries.</p>
-        </div>
+          <p class="text-center" >The ALICEVISION association has been founded by 14 people from European research and industry, who have been collaborating since 2010 around 3D computer vision for cultural and creative industries.</p>
       </div>
     </div>
     <div class="container-fluid">
@@ -153,145 +227,107 @@
         <div class="col-6 col-lg-2">
           <a href="http://igt.ip.uca.fr/~ab/">
             <img src="assets/members/AB.png" class="center-block img-fluid my-3 rounded-circle">
-            <h3 class="mb-0"><b>Adrien Bartoli</b></h3>
-            <p class="text-muted">Professor</p>
-            <p class="text-muted">University of Clermont-Auvergne</p>
+            <h4 class="mb-0"><b>Adrien Bartoli</b></h4>
+            <p class="text-muted">Professor<br> University of Clermont-Auvergne</p>
           </a>
         </div>
-        <div class="col-6 col-lg-2 animate-in-right">
+        <div class="col-6 col-lg-2">
           <a href="http://linkedin.com/in/lilian-calvet-42b1a689">
             <img src="assets/members/LC.png" class="center-block img-fluid my-3 rounded-circle">
-            <h3 class="mb-0"><b>Lilian Calvet</b></h3>
-            <p class="text-muted">Researcher</p>
-            <p class="text-muted">INP, Toulouse</p>
+            <h4 class="mb-0"><b>Lilian Calvet</b></h4>
+            <p class="text-muted">Researcher<br>INP, Toulouse</p>
           </a>
         </div>
-        <div class="col-6 col-lg-2 animate-in-left">
+        <div class="col-6 col-lg-2">
           <a href="http://linkedin.com/in/fabien-castan">
             <img src="assets/members/FC.png" class="center-block img-fluid my-3 rounded-circle">
-            <h3 class="mb-0"><b>Fabien Castan</b></h3>
-            <p class="text-muted">R&amp;D Engineer</p>
-            <p class="text-muted">Mikros Image, Paris</p>
+            <h4 class="mb-0"><b>Fabien Castan</b></h4>
+            <p class="text-muted">R&amp;D Engineer<br>Mikros Image, Paris</p>
           </a>
         </div>
-        <div class="col-6 mask col-lg-2 animate-in-right">
+        <div class="col-6 mask col-lg-2">
           <a href="http://linkedin.com/in/vincent-charvillat-33b3a67">
             <img src="assets/members/VC.png" class="center-block img-fluid my-3 rounded-circle">
-            <h3 class="mb-0"><b>Vincent Charvillat</b></h3>
-            <p class="text-muted">Professor</p>
-            <p class="text-muted">University of Toulouse</p>
+            <h4 class="mb-0"><b>Vincent Charvillat</b></h4>
+            <p class="text-muted">Professor<br>University of Toulouse</p>
           </a>
         </div>
         <div class="col-6 col-lg-2">
           <a href="http://linkedin.com/in/simone-gasparini-70b5621">
             <img src="assets/members/SG.png" class="center-block img-fluid my-3 rounded-circle">
-            <h3 class="mb-0"><b>Simone Gasparini</b></h3>
-            <p class="text-muted">Researcher</p>
-            <p class="text-muted">University of Toulouse</p>
+            <h4 class="mb-0"><b>Simone Gasparini</b></h4>
+            <p class="text-muted">Researcher<br>University of Toulouse</p>
           </a>
         </div>
         <div class="col-6 col-lg-2">
           <a href="http://linkedin.com/in/carsten-griwodz-baab072">
             <img src="assets/members/CG.jpg" class="center-block img-fluid my-3 rounded-circle">
-            <h3 class="mb-0"><b>Carsten Griwodz</b></h3>
-            <p class="text-muted">Researcher</p>
-            <p class="text-muted">University of Oslo</p>
+            <h4 class="mb-0"><b>Carsten Griwodz</b></h4>
+            <p class="text-muted">Researcher<br>University of Oslo</p>
           </a>
         </div>
-        <div class="col-6 col-lg-2 animate-in-right">
+        <div class="col-6 col-lg-2">
           <a href="http://linkedin.com/in/pierregurdjos">
             <img src="assets/members/PG.jpg" class="center-block img-fluid my-3 rounded-circle">
-            <h3 class="mb-0"><b>Pierre Gurdjos</b></h3>
-            <p class="text-muted">Researcher</p>
-            <p class="text-muted">University of Toulouse</p>
+            <h4 class="mb-0"><b>Pierre Gurdjos</b></h4>
+            <p class="text-muted">Researcher<br>University of Toulouse</p>
           </a>
         </div>
-        <div class="col-6 col-lg-2 animate-in-left">
+        <div class="col-6 col-lg-2">
           <a href="http://linkedin.com/in/yann-lanthony-a7708a34">
             <img src="assets/members/YL.png" class="center-block img-fluid my-3 rounded-circle">
-            <h3 class="mb-0"><b>Yann Lanthony</b></h3>
-            <p class="text-muted">R&amp;D Engineer</p>
-            <p class="text-muted">Mikros Image, Paris</p>
+            <h4 class="mb-0"><b>Yann Lanthony</b></h4>
+            <p class="text-muted">R&amp;D Engineer<br>Mikros Image, Paris</p>
           </a>
         </div>
         <div class="col-6 col-lg-2">
           <a href="http://linkedin.com/in/benoitmaujean">
             <img src="assets/members/BM.png" class="center-block img-fluid my-3 rounded-circle">
-            <h3 class="mb-0"><b>Benoit Maujean</b></h3>
-            <p class="text-muted">R&amp;D Manager</p>
-            <p class="text-muted">Mikros Image, Paris</p>
+            <h4 class="mb-0"><b>Benoit Maujean</b></h4>
+            <p class="text-muted">R&amp;D Manager<br>Mikros Image, Paris</p>
           </a>
         </div>
-        <div class="col-6 mask col-lg-2 animate-in-right">
+        <div class="col-6 mask col-lg-2">
           <a href="http://linkedin.com/in/jean-mélou-b74005a6">
             <img src="assets/members/JM.jpg" class="center-block img-fluid my-3 rounded-circle">
-            <h3 class="mb-0"><b>Jean Mélou</b></h3>
-            <p class="text-muted">Post-Doctoral Fellow</p>
-            <p class="text-muted">University of Toulouse</p>
+            <h4 class="mb-0"><b>Jean Mélou</b></h4>
+            <p class="text-muted">Post-Doctoral Fellow<br>University of Toulouse</p>
           </a>
         </div>
         <div class="col-6 col-lg-2">
           <a href="http://linkedin.com/in/håvard-nygaard-espeland-9b2a8964">
             <img src="assets/members/HE.png" class="center-block img-fluid my-3 rounded-circle">
-            <h3 class="mb-0"><b>Håvard Nygaard Espeland</b></h3>
-            <p class="text-muted">Researcher</p>
-            <p class="text-muted">Simula Lab, Oslo</p>
+            <h4 class="mb-0"><b>Håvard Nygaard Espeland</b></h4>
+            <p class="text-muted">Researcher<br>Simula Lab, Oslo</p>
           </a>
         </div>
-        <div class="col-6 col-lg-2 animate-in-right">
+        <div class="col-6 col-lg-2">
           <a href="http://linkedin.com/in/tomas-pajdla-8613737">
             <img src="assets/members/TP.png" class="center-block img-fluid my-3 rounded-circle">
-            <h3 class="mb-0"><b>Tomas Pajdla</b></h3>
-            <p class="text-muted">Professor</p>
-            <p class="text-muted">CTU, University of Prague</p>
+            <h4 class="mb-0"><b>Tomas Pajdla</b></h4>
+            <p class="text-muted">Professor<br>CTU, University of Prague</p>
           </a>
         </div>
-        <div class="col-6 col-lg-2 animate-in-left">
+        <div class="col-6 offset-md-4 col-lg-2">
           <a href="http://linkedin.com/in/michalpolic">
             <img src="assets/members/MP.png" class="center-block img-fluid my-3 rounded-circle">
-            <h3 class="mb-0"><b>Michal Polic</b></h3>
-            <p class="text-muted">Researcher</p>
-            <p class="text-muted">CTU, University of Prague</p>
+            <h4 class="mb-0"><b>Michal Polic</b></h4>
+            <p class="text-muted">Researcher<br>CTU, University of Prague</p>
           </a>
         </div>
         <div class="col-6 col-lg-2">
           <a href="http://linkedin.com/in/yvain-queau-45479687">
             <img src="assets/members/YQ.jpg" class="center-block img-fluid my-3 rounded-circle">
-            <h3 class="mb-0"><b>Yvain Queau</b></h3>
-            <p class="text-muted">Researcher</p>
-            <p class="text-muted">CNRS, University of Caen</p>
+            <h4 class="mb-0"><b>Yvain Queau</b></h4>
+            <p class="text-muted">Researcher<br>CNRS, University of Caen</p>
           </a>
         </div>
       </div>
     </div>
   </div>
-  <!-- Statutes -->
-  <div class="py-5 section-parallax" style="background-image: url(&quot;assets/graph_meshroom_BG4.png&quot;);" id="statutes">
-    <div class="container my-5 bg-light p-4">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="mt-4">Statutes</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <a href="assets/statutes/Statuts_ALICEVISION.pdf" target="blank">
-            <i class="fa fa-3x fa-file-text m-2"></i>
-            <p>Status officiels de l’association (French)</p>
-          </a>
-        </div>
-        <div class="col-md-6">
-          <a href="assets/statutes/Statutes_ALICEVISION(EN).pdf" target="blank">
-            <i class="fa fa-3x fa-file-text m-2"></i>
-            <p>Association Statutes translation (English)</p>
-            <p>This translation version is given for reference only.</p>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+
   <!-- History -->
-  <div class="py-5 section bg-faded bg-light" id="history">
+  <div class="py-5 section" id="history">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -300,12 +336,12 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p class="text-left" style="">In <strong>2010</strong>, <a href="http://imagine.enpc.fr/" target="blank">IMAGINE</a> research team (a joint research group between <a href="http://www.enpc.fr/en" target="blank">Ecole des Ponts ParisTech</a> and <a href="http://international.cstb.fr/" target="blank">Centre Scientifique et Technique du Bâtiment</a>) and <a href="http://www.mikrosimage.com" target="blank">Mikros Image</a> started a partnership around Pierre Moulon’s thesis, supervised by Renaud Marlet and Pascal Monasse on the academic side and Benoit Maujean on the industrial side. In 2013, they released an open source SfM pipeline, called openMVG (“Multiple View Geometry”), to provide the basis of a better solution for the creation of visual effects matte-paintings.</p>
+          <p class=" text-justify" >In <strong>2010</strong>, <a href="http://imagine.enpc.fr/" target="blank">IMAGINE</a> research team (a joint research group between <a href="http://www.enpc.fr/en" target="blank">Ecole des Ponts ParisTech</a> and <a href="http://international.cstb.fr/" target="blank">Centre Scientifique et Technique du Bâtiment</a>) and <a href="http://www.mikrosimage.com" target="blank">Mikros Image</a> started a partnership around Pierre Moulon’s thesis, supervised by Renaud Marlet and Pascal Monasse on the academic side and Benoit Maujean on the industrial side. In 2013, they released an open source SfM pipeline, called openMVG (“Multiple View Geometry”), to provide the basis of a better solution for the creation of visual effects matte-paintings.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p class="text-left" style="">In <strong>2009</strong>, <a href="http://cmp.felk.cvut.cz/" target="blank">CMP</a> research team from <a href="http://aag.ciirc.cvut.cz" target="blank">CTU</a><a> started the PhD thesis of Michal Jancosek supervised by Tomas Pajdla. They released windows binaries of their MVS pipeline, called CMPMVS, in 2012.</a></p><a>
+          <p class="text-justify" >In <strong>2009</strong>, <a href="http://cmp.felk.cvut.cz/" target="blank">CMP</a> research team from <a href="http://aag.ciirc.cvut.cz" target="blank">CTU</a> started the PhD thesis of Michal Jancosek supervised by Tomas Pajdla. They released windows binaries of their MVS pipeline, called CMPMVS, in 2012.</p>
           </a>
         </div><a>
         </a>
@@ -315,17 +351,17 @@
         </a>
         <div class="col-md-12"><a>
           </a>
-          <p class="text-left" style=""><a>In <strong>2009</strong>, Toulouse </a><a href="https://www.irit.fr/en/departement/dep-hpc-simulation-optimization/reva-team" target="blank">INP</a> (Lilian Calvet, Vincent Charvillat, Pierre Gurdjos), INRIA (Simone Gasparini, Peter Sturm) and Duran Duboi (Fabien Castan, Eloi Du Bois) started a French ANR project to create a model based Camera Tracking solution based on natural features and a new marker design called CCTag.</p>
+          <p class="text-justify" >In <strong>2009</strong>, Toulouse <a href="https://www.irit.fr/en/departement/dep-hpc-simulation-optimization/reva-team" target="blank">INP</a> (Lilian Calvet, Vincent Charvillat, Pierre Gurdjos), INRIA (Simone Gasparini, Peter Sturm) and Duran Duboi (Fabien Castan, Eloi Du Bois) started a French ANR project to create a model based Camera Tracking solution based on natural features and a new marker design called CCTag.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p class="text-left" style="">In <strong>2015</strong>, <a href="https://www.simula.no/" target="blank">Simula</a> (Lilian Calvet, Håvard Nygaard Espeland, Carsten Griwodz), Toulouse <a href="https://www.irit.fr/en/departement/dep-hpc-simulation-optimization/reva-team" target="blank">INP</a> (Vincent Charvillat, Simone Gasparini) and Mikros Image (Fabien Castan, Benoit Maujean, Jean Mélou, Cyril Pichard, Nicolas Rondaud) joined their efforts in the EU project <a href="http://www.alicevision.org/popart" target="blank">POPART</a> to create a Previz system.</p>
+          <p class="text-justify" >In <strong>2015</strong>, <a href="https://www.simula.no/" target="blank">Simula</a> (Lilian Calvet, Håvard Nygaard Espeland, Carsten Griwodz), Toulouse <a href="https://www.irit.fr/en/departement/dep-hpc-simulation-optimization/reva-team" target="blank">INP</a> (Vincent Charvillat, Simone Gasparini) and Mikros Image (Fabien Castan, Benoit Maujean, Jean Mélou, Cyril Pichard, Nicolas Rondaud) joined their efforts in the EU project <a href="http://www.alicevision.org/popart" target="blank">POPART</a> to create a Previz system.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p class="text-left" style="">In <strong>2015</strong>, Michal Polic started a PhD at <a href="http://aag.ciirc.cvut.cz" target="blank">CTU</a><a> on uncertainty estimation (supervised by Tomas Pajdla).</a></p><a>
+          <p class="text-justify" >In <strong>2015</strong>, Michal Polic started a PhD at <a href="http://aag.ciirc.cvut.cz" target="blank">CTU</a><a> on uncertainty estimation (supervised by Tomas Pajdla).</a></p><a>
           </a>
         </div><a>
         </a>
@@ -335,73 +371,76 @@
         </a>
         <div class="col-md-12"><a>
           </a>
-          <p class="text-left" style=""><a>In <strong>2017</strong>, </a><a href="http://aag.ciirc.cvut.cz" target="blank">CTU</a><a> (Tomas Pajdla, Michal Polic) joined the partners group, with Simula (Carsten Griwodz, Konstantin Pogorelov), Mikros (Fabien Castan, Yann Lanthony, Gregoire De Lillo, Benoit Maujean), Toulouse </a><a href="https://www.irit.fr/en/departement/dep-hpc-simulation-optimization/reva-team" target="blank">INP</a> (Vincent Charvillat, Clément Debize, Simone Gasparini, Pierre Gurdjos, Hatem Rashwan), in the EU project <a href="http://www.alicevision.org/ladio" target="blank">LADIO</a> to create a central hub with structured access to all data generated on set.</p>
+          <p class="text-justify" ><a>In <strong>2017</strong>, </a><a href="http://aag.ciirc.cvut.cz" target="blank">CTU</a><a> (Tomas Pajdla, Michal Polic) joined the partners group, with Simula (Carsten Griwodz, Konstantin Pogorelov), Mikros (Fabien Castan, Yann Lanthony, Gregoire De Lillo, Benoit Maujean), Toulouse </a><a href="https://www.irit.fr/en/departement/dep-hpc-simulation-optimization/reva-team" target="blank">INP</a> (Vincent Charvillat, Clément Debize, Simone Gasparini, Pierre Gurdjos, Hatem Rashwan), in the EU project <a href="http://www.alicevision.org/ladio" target="blank">LADIO</a> to create a central hub with structu#EE6767 access to all data generated on set.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p class="text-left" style="">In <strong>2017</strong>, Jean Mélou started a PhD (CIFRE contract) with Toulouse <a href="https://www.irit.fr/en/departement/dep-hpc-simulation-optimization/reva-team" target="blank">INP</a> (supervised by Jean Denis-Durou and Yvain Queau) and Mikros.</p>
+          <p class="text-justify" >In <strong>2017</strong>, Jean Mélou started a PhD (CIFRE contract) with Toulouse <a href="https://www.irit.fr/en/departement/dep-hpc-simulation-optimization/reva-team" target="blank">INP</a> (supervised by Jean Denis-Durou and Yvain Queau) and Mikros.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p class="text-left" style="">In <strong>2020</strong>, <a href="https://www.irit.fr/en/departement/dep-hpc-simulation-optimization/reva-team" target="blank">INP</a> and <a href="http://www.mikrosimage.com" target="blank">Mikros</a> joined their effort to create the collaborative lab ALICIA-Vision, supported by French Agence Nationale de la Recherche.</p>
+          <p class="text-justify" >In <strong>2020</strong>, <a href="https://www.irit.fr/en/departement/dep-hpc-simulation-optimization/reva-team" target="blank">INP</a> and <a href="http://www.mikrosimage.com" target="blank">Mikros</a> joined their effort to create the collaborative lab ALICIA-Vision, supported by French Agence Nationale de la Recherche.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p class="text-left" style="">In <strong>2020</strong>, the ALICEVISION association is created.</p>
+          <p class="text-justify" >In <strong>2020</strong>, the ALICEVISION association is created.</p>
         </div>
       </div>
     </div>
   </div>
   <!-- Milestones -->
-  <div class="py-5 section-parallax" style="background-image: url(&quot;assets/graph_meshroom_BG3.png&quot;);" id="milestones">
-    <div class="container my-5 bg-light p-4">
-      <div class="row">
+  <div class="py-3" id="milestones">
+    <div class="container p-4">
+      <div class="row py-2">
         <div class="col-md-12">
-          <h1 class="mt-4">Milestones</h1>
+          <h1>Milestones</h1>
         </div>
       </div>
-      <div class="row text-left">
+      <div class="row text-left py-2">
         <ul style="list-style: none;">
           <li>
-            <i class="fa fa-rocket text-muted m-12">&nbsp;&nbsp;</i> 2015 : <a href="https://github.com/alicevision/meshroom/commit/c8de75d7733ef1d8e7d72993874970bc432eaa7f#diff-af3b638bc2a3e6c650974192a53c7291" target="blank">First open source version</a><a> of Meshroom (SfM only) </a></li><a>
+            <i class="fa fa-rocket m-12">&nbsp;&nbsp;</i> 2015 : <a href="https://github.com/alicevision/meshroom/commit/c8de75d7733ef1d8e7d72993874970bc432eaa7f#diff-af3b638bc2a3e6c650974192a53c7291" target="blank">First open source version</a> of Meshroom (SfM only)</li>
           </a>
-          <li><a>
-              <i class="fa fa-rocket text-muted m-12">&nbsp;&nbsp;</i> 2016 : First open source version of </a><a href="https://github.com/alicevision/CCTag/releases/tag/cvpr16" target="blank">CCTag</a><a> with CPU and GPU implementations </a></li><a>
+          <li>
+              <i class="fa fa-rocket m-12">&nbsp;&nbsp;</i> 2016 : First open source version of <a href="https://github.com/alicevision/CCTag/releases/tag/cvpr16" target="blank">CCTag</a> with CPU and GPU implementations</li>
           </a>
-          <li><a>
-              <i class="fa fa-rocket text-muted m-12">&nbsp;&nbsp;</i> 2016 : First open source version of </a><a href="https://github.com/alicevision/popsift/releases/tag/POPART_R0.1" target="blank">PopSift</a>
+          <li>
+              <i class="fa fa-rocket text-muted m-12">&nbsp;&nbsp;</i> 2016 : First open source version of<a href="https://github.com/alicevision/popsift/releases/tag/POPART_R0.1" target="blank"> PopSift</a>
           </li>
           <li>
-            <i class="fa fa-user text-muted m-12">&nbsp;&nbsp;</i> &nbsp;2018 : AliceVision / Meshroom <a href="https://fmx.de/program2018/event/12710" target="blank">conference</a> at FMX 2018 (Stuttgart) </li>
+            <i class="fa fa-user m-12">&nbsp;&nbsp;</i> &nbsp;2018 : AliceVision / Meshroom <a href="https://fmx.de/program2018/event/12710" target="blank">conference</a> at FMX 2018 (Stuttgart) </li>
           <li>
-            <i class="fa fa-rocket text-muted m-12">&nbsp;&nbsp;</i> 2018 : Meshroom <a href="https://github.com/alicevision/meshroom/releases/tag/v2018.1.0" target="blank">first release</a> as a complete 3D reconstruction pipeline (with both SfM and MVS) </li>
+            <i class="fa fa-rocket m-12">&nbsp;&nbsp;</i> 2018 : Meshroom <a href="https://github.com/alicevision/meshroom/releases/tag/v2018.1.0" target="blank">first release</a> as a complete 3D reconstruction pipeline (with both SfM and MVS) </li>
           <li>
-            <i class="fa fa-user text-muted m-12">&nbsp;&nbsp;</i> &nbsp;2018 : AliceVision <a href="https://s2018.siggraph.org/conference/conference-overview/birds-of-a-feather/" target="blank">Bird of a Feather</a> at Siggraph 2018 (Vancouver) </li>
+            <i class="fa fa-user m-12">&nbsp;&nbsp;</i> &nbsp;2018 : AliceVision <a href="https://s2018.siggraph.org/conference/conference-overview/birds-of-a-feather/" target="blank">Bird of a Feather</a> at Siggraph 2018 (Vancouver) </li>
           <li>
-            <i class="fa fa-rocket text-muted m-12">&nbsp;&nbsp;</i> 2019 : New versions of Meshroom (<a href="https://github.com/alicevision/meshroom/releases/tag/v2019.1.0" target="blank">2019.1</a> and <a href="https://github.com/alicevision/meshroom/releases/tag/v2019.2.0" target="blank">2019.2</a>) with a new user interface, improved mesh and texture. </li>
+            <i class="fa fa-rocket m-12">&nbsp;&nbsp;</i> 2019 : New versions of Meshroom (<a href="https://github.com/alicevision/meshroom/releases/tag/v2019.1.0" target="blank">2019.1</a> and <a href="https://github.com/alicevision/meshroom/releases/tag/v2019.2.0" target="blank">2019.2</a>) with a new user interface, improved mesh and texture. </li>
           <li>
-            <i class="fa fa-user text-muted m-12">&nbsp;&nbsp;</i> &nbsp;2019 : Meshroom <a href="https://s2019.siggraph.org/conference/programs-events/birds-of-a-feather/" target="blank">Bird of a Feather</a> at Siggraph 2019 (Los Angeles) </li>
+            <i class="fa fa-user m-12">&nbsp;&nbsp;</i> &nbsp;2019 : Meshroom <a href="https://s2019.siggraph.org/conference/programs-events/birds-of-a-feather/" target="blank">Bird of a Feather</a> at Siggraph 2019 (Los Angeles) </li>
           <li>
-            <i class="fa fa-user text-muted m-12">&nbsp;&nbsp;</i> &nbsp;2020 : AliceVision session at ASWF <a href="https://events.linuxfoundation.org/open-source-days/" target="blank">Open Source Days</a> (during online Siggraph) </li>
+            <i class="fa fa-user m-12">&nbsp;&nbsp;</i> &nbsp;2020 : AliceVision session at ASWF <a href="https://events.linuxfoundation.org/open-source-days/" target="blank">Open Source Days</a> (during online Siggraph) </li>
           <li>
-            <i class="fa fa-rocket text-muted m-12">&nbsp;&nbsp;</i> 2020 (coming soon) : New version of Meshroom (2020.1) with new HDR Panorama pipeline </li>
+            <i class="fa fa-rocket m-12">&nbsp;&nbsp;</i> 2020 (coming soon) : New version of Meshroom (2020.1) with new HDR Panorama pipeline </li>
         </ul>
       </div>
     </div>
   </div>
   <!-- Contribute -->
-  <div class="py-5 section bg-faded bg-light" id="contribute">
+  <div class="py-5 section" id="contribute">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="mb-4">Contribute</h1>
+          <h1>Contribute</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12 text-md-left text-center">
+        <img src="assets/contributing.png" />
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-justify">
           <p>ALICEVISION project relies on an open and friendly community of contributors always enthusiastic to share new ideas and start new collaborations. </p>
           <p> If you are a Computer Vision Researcher, do not hesitate to <a href="mailto:team@alicevision.org" target="blank">reach us</a>. We are always interested in discussing new approaches and comparing different solutions. </p>
           <p> If you are a Developer and you want to contribute to the development of the software, do not hesitate to checkout the github and have a look at <a href="https://github.com/alicevision/AliceVision/blob/develop/CONTRIBUTING.md" target="blank">CONTRIBUTING.md</a> for the first steps. There are a huge amount of possible improvements, regarding performance, user interface, documentation, unit tests, CI/CD etc. </p>
@@ -411,7 +450,7 @@
     </div>
   </div>
   <!-- Donate -->
-  <div class="section-aquamarine py-5" style="background-image: url(&quot;assets/graph_meshroom_BG_dark.png&quot;)" id="donate">
+  <div class="py-5" id="donate">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -419,27 +458,39 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12 text-md-left text-center">
+        <div class="col-md-12 text-center">
           <p>If you use and love AliceVision and Meshroom, please consider <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=DTXKVT89NLZT6&amp;source=url" target="blank" style="color:orange"><strong>making a donation</strong></a> to help us build better and more efficient software.</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12 align-self-center animate-in-right mb-3">
-          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=DTXKVT89NLZT6&amp;source=url" target="blank" class="btn btn-lg btn-light my-3"><i class="fa fa-heart text-muted m-12">&nbsp;&nbsp;</i>Make a Donation</a>
+      <div class="row mb-4">
+        <div class="col-md-12 align-self-center animate-in-right">
+          <a style="color:#333;" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=DTXKVT89NLZT6&amp;source=url" target="blank" class="btn btn-lg btn-light my-3"><i class="fa fa-heart m-12" style="color:#EE6767" >&nbsp;&nbsp;</i>Make a Donation</a>
         </div>
       </div>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-md-left text-center"> If you are part of an institution or company using it, please consider <a href="mailto:association@alicevision.org" target="blank" style="color:orange"><strong>a corporate sponsorship</strong></a>. This will enable your organization to monitor in more detail what will get funded with your contributions. You will get direct access to the AliceVision team for strategic discussions and support. Roadmaps and priorities will be aligned with your requirements as much as possible. AliceVision association will actively reach out to Corporate members to discuss the bi-annual planning. </div>
+      <div class="row my-2">
+        <div class="col-md-12 text-center">
+          <p>If you are part of an institution or company using it, please consider <a href="mailto:association@alicevision.org" target="blank" style="color:orange"><strong>a corporate sponsorship</strong></a>. This will enable your organization to monitor in more detail what will get funded with your contributions. You will get direct access to the AliceVision team for strategic discussions and support. Roadmaps and priorities will be aligned with your requirements as much as possible. AliceVision association will actively reach out to Corporate members to discuss the bi-annual planning.</p>
+        </div>
         <div class="col-md-12 align-self-center animate-in-left">
-          <a href="mailto:AliceVisionAssociation&lt;association@alicevision.org&gt;?subject=AliceVision%20Corporate%20Sponsorship" target="blank" class="btn btn-lg btn-light my-3"><i class="fa fa-heart text-muted m-12">&nbsp;&nbsp;</i>Become a Corporate Sponsor</a>
+          <a style="color:#333;" href="mailto:AliceVisionAssociation&lt;association@alicevision.org&gt;?subject=AliceVision%20Corporate%20Sponsorship" target="blank" class="btn btn-lg btn-light my-3"><i class="fa fa-heart m-12" style="color:#EE6767">&nbsp;&nbsp;</i>Become a Corporate Sponsor</a>
         </div>
       </div>
     </div>
   </div>
   <!-- Footer -->
-  <footer class="text-md-left text-center p-4 bg-dark text-light">
+
+<!--
+    <svg xmlns="http://www.w3.org/2000/svg" width="102%" height="162" viewBox="0 0 1932 162">
+      <path id="Tracé_5" data-name="Tracé 5" d="M0,78S839-76,1322-76,1932,0,1932,0V86H0Z" transform="translate(0 76)" fill="#32343d"/>
+    </svg>
+-->
+
+
+
+  <footer class="text-md-left bg-dark text-center p-4 text-light">
+
     <div class="container">
       <div class="row">
         <div class="my-3 col-lg-7 col-md-4">
@@ -453,9 +504,9 @@
           <a href="https://groups.google.com/forum/#!forum/alicevision" target="blank" title="Mailing List"><i class="fa fa-3x fa-comments text-muted m-2"></i></a>
           <!-- <a href="https://sketchfab.com/AliceVision" target="blank" title="Sketchfab"><i class="fa fa-3x fa-cube <!-- text-muted m-2"></i></a> -->
           <a href="https://sketchfab.com/AliceVision" target="blank" title="Sketchfab"><img src="assets/logos/sketchfab_fitcolor.png" style="width:68px;height:68px;opacity:1;vertical-align:top"></a>
-          <a href="https://twitter.com/alicevision_org" target="blank" title="Twitter"><i class="fa fa-3x fa-twitter m-2 text-muted"></i></a>
-          <a href="https://www.linkedin.com/groups/13573776" target="blank" title="Linkedin"><i class="fa fa-3x text-muted m-2 fa-linkedin"></i></a>
-          <a href="https://www.youtube.com/channel/UCQAJFOz8yuMTn9dSHkdU-nw" target="blank" title="Youtube"><i class="fa fa-3x text-muted fa-youtube-play m-2"></i></a>
+          <a href="https://twitter.com/alicevision_org" target="blank" title="Twitter"><i class="fab fa-3x fa-twitter m-2 text-muted"></i></a>
+          <a href="https://www.linkedin.com/groups/13573776" target="blank" title="Linkedin"><i class="fab fa-3x text-muted m-2 fa-linkedin"></i></a>
+          <a href="https://www.youtube.com/channel/UCQAJFOz8yuMTn9dSHkdU-nw" target="blank" title="Youtube"><i class="fab fa-3x text-muted fa-youtube-play m-2"></i></a>
         </div>
       </div>
     </div>

@@ -1,9 +1,3 @@
-/*!
-* Aquamarine Pingendo template (https://templates.pingendo.com)
-* Based on: Bootstrap v4.1.3 (https://getbootstrap.com)
-* Copyright 2014-2018 Pingendo (https://pingendo.com)
-*/
- 
 @import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400');
 
   
@@ -23,20 +17,24 @@ $enable-print-styles:       true;
 // Colors
 
 $theme-colors: (
-  primary: #12bbad,
+  dark-blue: #465D7B,
+  light-blue: #E5F4F9,
+  primary: rgb(0, 225, 255),
   secondary: #4f70ce,
   light: #f3f3f3,
-  dark: #151515,
+  dark: #32343D,
   info: #ccc,
   success: #28a745,
   warning: #ffc107,
   danger: #dc3545
 );
 
+p, li, h1, h2 {color: map-get($theme-colors, '32343D')}
+
 $body-bg: white;
-$body-color: #333;
+$body-color: #32343D;
 $body-color-inverse: invert($body-color) !default;
-$link-color: #12bbad;
+$link-color: map-get($theme-colors, 'primary');
 
 // Fonts
 $font-family-base: Roboto;
@@ -75,7 +73,7 @@ $breadcrumb-bg: transparent !default;
 $carousel-caption-width:            					100% !default;
 $carousel-indicator-height:                   6px !default;
 
-@import 'bootstrap-4.1.3';
+@import 'bootstrap/scss/bootstrap.scss';
 
 html,body {
    height:100%;
@@ -85,6 +83,8 @@ body > * {
   background-position: center;
   background-size: cover;
 }
+
+.text-justify {text-align: justify;}
 
 
 // Color yiq
@@ -111,6 +111,67 @@ body > * {
   box-shadow: 0px 0px 5px #555;
 }
 
+#landing{
+  .logo-container{
+    margin-top: 0!important;
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    img {
+      max-width: 150px;
+    }
+  }
+
+  
+}
+
+#mission {
+  .mission {
+    background-color: rgba(255,255,255, 0.85);
+    div, p, li {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      // vertical-align: middle;
+    }
+    .col-md-2 {
+      text-align: center;
+    }
+    li {
+      margin-bottom: 1rem;
+      list-style-type: none;
+      .fa, .fab {margin-right: 15px;}
+    }
+    a {
+      color : orange;
+    }
+
+    .fa-2x {
+      font-size: 1.1em !important;
+    }
+    
+    
+  }
+}
+
+#projects {
+  a {
+  color : orange;
+  }
+}
+
+#non-profit-org {
+  background-color: map-get($theme-colors, 'dark-blue');
+
+  p, h1 {
+    color: white;
+  }
+
+  a {
+    color : orange;
+  }
+}
+
 #members {
   .row {
     margin-left: 10%;
@@ -120,7 +181,52 @@ body > * {
     max-height: 160px;
     width: auto;
   }
+  a {
+    color : orange;
+  }
+  
 }
+
+#history {
+  background-color: #B2CADF;
+  a {
+    color : white;
+  }
+  
+}
+
+#milestones, #donate {
+  background-color: map-get($theme-colors, 'dark-blue');
+  li, p, h1 {
+    color: white;
+    i {
+      color: white !important;
+    }
+  }
+
+  li:not(:first-child):before {
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: white;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-left: 7px;
+  }
+
+  a {
+    color : orange;
+  }
+}
+
+#contribute {
+  a {
+    color : orange;
+  }
+  
+}
+
 
 .section-aquamarine {
   position: relative;
@@ -181,17 +287,23 @@ body > * {
   color:white;
 }
 
+.bg-dark {
+  background-color: map-get($theme-colors, 'dark');
+}
+
 .img-thumbnail {
   border:0px;
   padding:10px;
 }
+
 
 .carousel {
 	.carousel-caption {
     padding-top:50px;
     padding-bottom:20px;
 	  bottom:0px;
-		background: linear-gradient(transparent 10%, transparentize(theme-color("dark"), 0.05) 100%);}
+    background: linear-gradient(transparent 10%, transparentize(theme-color("dark"), 0.05) 100%);
+  }
   .carousel-control-next, .carousel-control-prev {
     opacity:0.85;}
   .carousel-indicators {
