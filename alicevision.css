@@ -8137,6 +8137,48 @@ body > * {
 #contribute a {
   color: orange; }
 
+#toggle_corporateSponsorship {
+  color: white;
+  font-size: 1.25rem;
+  margin: auto;
+  background-color: #32343d;
+  padding: 0.5em 1em; }
+  #toggle_corporateSponsorship:hover {
+    cursor: pointer;
+    background-color: #25272e; }
+
+.corporateSponsorship {
+  display: none;
+  box-shadow: 0px 0px 50px 15px #1e2632;
+  background-color: #354357;
+  padding: 0 3em;
+  margin-top: 2em; }
+  .corporateSponsorship .sponsor a {
+    background-color: #32343d;
+    margin: 0.5em;
+    display: block;
+    padding: 0.1em;
+    text-decoration: none;
+    transition: background-color 0.4s ease;
+    border: 1px solid #465d7b; }
+  .corporateSponsorship .sponsor a:hover {
+    background-color: #25272e; }
+  .corporateSponsorship .sponsor h2 {
+    margin-bottom: 1em; }
+    .corporateSponsorship .sponsor h2:after {
+      content: " ";
+      position: absolute;
+      width: 1.5em;
+      height: 1px;
+      top: 16px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-color: #e5e4e2; }
+  .corporateSponsorship .information {
+    margin: 2em 0; }
+
 .section-aquamarine {
   position: relative;
   color: white;
