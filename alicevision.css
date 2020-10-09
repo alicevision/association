@@ -8113,7 +8113,8 @@ body > * {
 #history {
   background-color: #B2CADF; }
   #history a {
-    color: white; }
+    color: #0012a3;
+    text-decoration: underline; }
 
 #milestones, #donate {
   background-color: #465D7B; }
