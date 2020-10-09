@@ -8058,76 +8058,6 @@ body > * {
 .text-justify {
   text-align: justify; }
 
-.bg-primary {
-  color: #212529; }
-  .bg-primary input::placeholder {
-    color: rgba(33, 37, 41, 0.8); }
-  .bg-primary .input-group-text {
-    color: #212529; }
-
-.bg-secondary {
-  color: #fff; }
-  .bg-secondary input::placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-secondary .input-group-text {
-    color: #fff; }
-
-.bg-success {
-  color: #fff; }
-  .bg-success input::placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-success .input-group-text {
-    color: #fff; }
-
-.bg-info {
-  color: #212529; }
-  .bg-info input::placeholder {
-    color: rgba(33, 37, 41, 0.8); }
-  .bg-info .input-group-text {
-    color: #212529; }
-
-.bg-warning {
-  color: #212529; }
-  .bg-warning input::placeholder {
-    color: rgba(33, 37, 41, 0.8); }
-  .bg-warning .input-group-text {
-    color: #212529; }
-
-.bg-danger {
-  color: #fff; }
-  .bg-danger input::placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-danger .input-group-text {
-    color: #fff; }
-
-.bg-light {
-  color: #212529; }
-  .bg-light input::placeholder {
-    color: rgba(33, 37, 41, 0.8); }
-  .bg-light .input-group-text {
-    color: #212529; }
-
-.bg-dark {
-  color: #fff; }
-  .bg-dark input::placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-dark .input-group-text {
-    color: #fff; }
-
-.bg-dark-blue {
-  color: #fff; }
-  .bg-dark-blue input::placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-dark-blue .input-group-text {
-    color: #fff; }
-
-.bg-light-blue {
-  color: #212529; }
-  .bg-light-blue input::placeholder {
-    color: rgba(33, 37, 41, 0.8); }
-  .bg-light-blue .input-group-text {
-    color: #212529; }
-
 .cover {
   min-height: 100%; }
 
@@ -8254,7 +8184,6 @@ body > * {
   background-position: center; }
 
 .bg-aquamarine {
-  background: linear-gradient(-30deg, rgba(79, 112, 206, 0.9) 0%, rgba(0, 225, 255, 0.9) 50%, rgba(0, 225, 255, 0.95) 100%);
   color: white; }
 
 .bg-dark {
@@ -8267,8 +8196,7 @@ body > * {
 .carousel .carousel-caption {
   padding-top: 50px;
   padding-bottom: 20px;
-  bottom: 0px;
-  background: linear-gradient(transparent 10%, rgba(50, 52, 61, 0.95) 100%); }
+  bottom: 0px; }
 .carousel .carousel-control-next, .carousel .carousel-control-prev {
   opacity: 0.85; }
 .carousel .carousel-indicators {
